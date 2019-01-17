@@ -8,5 +8,16 @@
     "start": "node server.js"
   },
   "author": "3mpirical",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "hbs": "^4.0.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.11.0",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1"
+  }
 }
