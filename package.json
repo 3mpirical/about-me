@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "webpack-watch": "webpack --watch",
+    "sass-watch": "node-sass public/scss --output public/css -w -r"
   },
   "author": "3mpirical",
   "license": "ISC",
