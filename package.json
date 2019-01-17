@@ -1,0 +1,12 @@
+{
+  "name": "about-me",
+  "version": "1.0.0",
+  "description": "For Devpoint Labs initial coding exercise. It is to be presented on the first day of th course. If you're reading this, wish me luck.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "3mpirical",
+  "license": "ISC"
+}
