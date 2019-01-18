@@ -38,7 +38,7 @@ header {
   -webkit-clip-path: polygon(0% 0%, 100% 0%, calc(100% - 6rem) 100%, 0% 100%);
   clip-path: polygon(0% 0%, 100% 0%, calc(100% - 6rem) 100%, 0% 100%);
   overflow: hidden;
-  border-bottom: 0.5px solid rgba(118, 255, 3, 0.5); }
+  border-bottom: 0.5px solid rgba(0, 255, 255, 0.5); }
   header::before {
     background-image: url("../img/motherboard.svg");
     background-position-y: 50%;
@@ -91,16 +91,21 @@ footer {
     position: absolute;
     left: 1rem;
     bottom: 25%;
-    width: 37rem;
+    width: 28.3rem;
     font-size: 1.2rem;
     color: #CFD8DC; }
+    footer .author:hover {
+      background-color: rgba(255, 255, 255, 0.1); }
   footer .get-in-touch {
     position: absolute;
     right: 1rem;
     bottom: 25%;
     font-size: 1.2rem;
     color: #00ffff;
-    cursor: pointer; }
+    cursor: pointer;
+    text-decoration: underline; }
+    footer .get-in-touch:hover {
+      background-color: rgba(255, 255, 255, 0.1); }
 
 nav {
   position: absolute;
@@ -140,7 +145,7 @@ nav {
   height: 28rem;
   width: 100%;
   z-index: -10;
-  border-bottom: 0.5px solid rgba(118, 255, 3, 0.5);
+  border-bottom: 0.5px solid rgba(0, 255, 255, 0.5);
   clip-path: polygon(calc(100% - 6rem) 0, 100% 0, 100% 6rem, calc(100% - 6rem) 12rem, calc(100% - 6rem) 100%, 0 100%, 0 6rem, calc(100% - 12rem) 6rem); }
   .self__photo-container {
     position: absolute;
