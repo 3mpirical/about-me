@@ -29,20 +29,35 @@ header {
     .header__name {
         @include pos-absolute-translated;
         top: 2.5rem;
-        right: -3rem;
+        right: -1rem;
         font-size: 2rem;
         font-family: "Space Mono";
         font-weight: 200;
         letter-spacing: 2px;
         color: $color-electric-green;
         opacity: 1;
+        transition: 0.3s;
+        z-index: 10;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(0.8, 0.8) translate(-60%, -60%);
+
+            + div {
+                transform: scaleX(1.5) translate(-35%, -45%);
+                opacity: 0;
+            }
+        }    
     }
 
     .underline {
         @include pos-absolute-translated;
-        font-size: 5.5rem;
-        right: -5rem;
-        top: 4rem;
+        font-size: 4.5rem;
+        right: -6rem;
+        top: 2.5rem;
+        color: $color-electric-green;
+        transition: 0.3s;
+    
     }
 }
 
