@@ -60,13 +60,14 @@ header {
     letter-spacing: 2px;
     color: #76FF03;
     opacity: 1;
-    transition: 0.3s;
+    transition: 0.4s;
     z-index: 10;
     cursor: pointer; }
     header .header__name:hover {
+      color: #00ffff;
       transform: scale(0.8, 0.8) translate(-60%, -60%); }
       header .header__name:hover + div {
-        transform: scaleX(1.5) translate(-35%, -45%);
+        transform: scale(1.5, 1.5) translate(-35%, -35%);
         opacity: 0; }
   header .underline {
     position: absolute;
