@@ -1,0 +1,21 @@
+.page-container {
+    // position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: calc(100vw - 6rem);
+    overflow: scroll;
+
+    header {
+        height: 6rem;
+    }
+
+    main {
+        flex: 1 0 auto;
+    }
+
+    footer{
+        position: relative;
+        height: 3rem;
+    }
+}

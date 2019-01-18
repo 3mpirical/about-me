@@ -1,25 +1,15 @@
 // VARIABLES //
-
-
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
 
 // BASE //
-
-*,
-*::before,
-*::after, {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-}
-
-html {
-    font-size: 62.5%;
-}
-
-body {
-    box-sizing: border-box;
-    font-family: sans-serif;
-}
-
+@import "./base/base";
 
 // LAYOUT //
+@import "./layout/page-container";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/nav";
+
+// PAGES //
+@import "./pages/index";

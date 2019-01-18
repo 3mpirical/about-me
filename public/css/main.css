@@ -10,4 +10,120 @@ html {
 
 body {
   box-sizing: border-box;
-  font-family: sans-serif; }
+  font-family: "Roboto", sans-serif;
+  background-color: #0d1114;
+  color: #CFD8DC; }
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: calc(100vw - 6rem);
+  overflow: scroll; }
+  .page-container header {
+    height: 6rem; }
+  .page-container main {
+    flex: 1 0 auto; }
+  .page-container footer {
+    position: relative;
+    height: 3rem; }
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - 6rem);
+  font-weight: 400;
+  background-color: #11171a;
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, calc(100% - 6rem) 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 100% 0%, calc(100% - 6rem) 100%, 0% 100%);
+  overflow: hidden;
+  border-bottom: 0.5px solid rgba(118, 255, 3, 0.5); }
+  header::before {
+    background-image: url("../img/motherboard.svg");
+    background-position-y: 50%;
+    background-repeat: none;
+    opacity: 0.04;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100rem;
+    content: ""; }
+  header .header__name {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 2.5rem;
+    right: -3rem;
+    font-size: 2rem;
+    font-family: "Space Mono";
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: #76FF03;
+    opacity: 1; }
+  header .underline {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    font-size: 5.5rem;
+    right: -5rem;
+    top: 4rem; }
+
+.self {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 28rem;
+  width: 100%;
+  z-index: -10;
+  border-bottom: 0.5px solid rgba(118, 255, 3, 0.5);
+  clip-path: polygon(calc(100% - 6rem) 0, 100% 0, 100% 6rem, calc(100% - 6rem) 12rem, calc(100% - 6rem) 100%, 0 100%, 0 6rem, calc(100% - 12rem) 6rem); }
+  .self__photo-container {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+    height: 18rem;
+    width: 18rem;
+    overflow: hidden;
+    border-radius: 3px; }
+  .self__photo {
+    height: 20rem;
+    width: 26rem; }
+
+footer {
+  background-color: #11171a; }
+  footer p {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    bottom: 15%;
+    width: 25rem; }
+
+nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 6rem;
+  background: #11171a;
+  clip-path: polygon(100% 6rem, 100% 100%, 0 100%, 0 12rem); }
+  nav ul {
+    list-style-type: none; }
+    nav ul:first-child {
+      margin-top: 12rem; }
+    nav ul a:link,
+    nav ul a:visited {
+      display: inline-block;
+      text-decoration: none;
+      color: inherit;
+      width: 100%;
+      height: 4rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+      padding-right: 0.5rem;
+      font-size: 1.5rem;
+      text-align: right;
+      font-family: "Space Mono"; }
+    nav ul a:hover {
+      border-right: 3px solid #00ffff;
+      color: #76FF03;
+      transform: scale(0.9, 0.9); }

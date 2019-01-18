@@ -13,7 +13,7 @@ const MONGODB_URI = process.env.MONGODB_URI ||"mongodb://127.0.0.1:27017/about-m
 // .catch((err) => console.log(`Failed To Connect To MongoDB: \n${err}`));
 
 app.set("view engine", "hbs");
-app.use(express.static(__dirname + "/public"));
+app.use(express.static(path.join(__dirname, "public")));
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 hbs.registerPartials(path.join(__dirname, "views", "partials"));
@@ -23,15 +23,15 @@ app.get("/", (req, res) => {
     .render("index");
 })
 
-
 //error route
 app.get("*", (req, res) => {
     res.status(404)
     .render("error");
 })
 
-// SERVER START
 
+
+// SERVER START
 app.listen(PORT, () => {
     console.log(`Server has started on PORT: ${PORT}`);
 });
