@@ -54,7 +54,7 @@ header {
     .underline {
         @include pos-absolute-translated;
         font-size: 4.5rem;
-        right: -6rem;
+        right: -6.6rem;
         top: 2.5rem;
         color: $color-electric-green;
         transition: 0.3s;

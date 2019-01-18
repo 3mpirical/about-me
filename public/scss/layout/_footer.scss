@@ -1,13 +1,24 @@
 footer{
-    // background-image:  
-    //     linear-gradient(to right, darken($color-background, 5%)70%, $color-background);
+    position: relative;
     background-color: darken($color-background, 10%);
 
-    p {
+    .author {
         position: absolute;
-        transform: translate(-50%, -50%);
-        left: 50%;
-        bottom: 15%;
-        width: 25rem;
+        // transform: translate(-50%, -50%);
+        left: 1rem;
+        bottom: 25%;
+        width: 37rem;
+        font-size: 1.2rem;
+        color: $color-off-white;
+    }
+
+    .get-in-touch {
+        position: absolute;
+        right: 1rem;
+        bottom: 25%;
+        font-size: 1.2rem;
+        // font-weight: 400;
+        color: $color-cyan;
+        cursor: pointer;
     }
 }
