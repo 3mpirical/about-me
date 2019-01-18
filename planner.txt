@@ -3,3 +3,24 @@
 /////////   PLANNER FILE   ////////
 ///////////////////////////////////
 
+DESCRIPTION___________________________________________
+This project is required for the first day of the course by Devpoint Labs and The University of Utah, it's mostly just to display information about yourself, but it has a list of requirements.
+
+REQUIREMENTS
+-Multiple sections with their own headings.
+
+-Consist of multiple pages.
+
+-Contain CSS linked from a separate file.
+
+-Images in the foreground and background.
+
+-BONUS: Build a contact form with fields for name, email, and message (this form does not have to actually work)
+
+-BONUS: Use JavaScript on the site.
+
+
+
+MAIN_FEATURES_________________________________________
+CCONSIDERED_FEATURES__________________________________
+PLANNED_IMPLEMENTATION________________________________
