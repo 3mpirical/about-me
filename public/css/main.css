@@ -252,18 +252,18 @@ nav {
   position: absolute;
   top: -6rem;
   right: 0;
-  height: 90rem;
+  height: 110rem;
   width: 65vw;
   clip-path: polygon(15rem 0, 100% 0, 100% 100%, 35rem 100%); }
   .map-container img {
     position: absolute;
     right: -20rem;
-    height: 90rem;
+    height: 110rem;
     background-position: right; }
   .map-container .map__i-live-here {
     position: absolute;
-    top: 33rem;
-    right: 11rem;
+    top: 42rem;
+    right: 18rem;
     width: 10rem;
     height: 10rem;
     border: 8px solid #00ffff;
