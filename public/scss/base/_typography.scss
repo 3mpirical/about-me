@@ -1,0 +1,25 @@
+.heading {
+    font-size: 1.5rem;
+    font-family: "Space Mono";
+    font-weight: 200;
+    letter-spacing: 2px;
+    color: $color-cyan;
+
+    @include syntax-highlight;
+
+    &__tag {
+        font-size: 2.3rem;
+        font-family: "Open Source Pro";
+        position: relative;
+        color: $monokai-orange;
+    }
+}
+
+.subheading {
+    font-family: "Space Mono";
+    color: $monokai-yellow;
+    // text-decoration: underline;
+
+    @include syntax-highlight;
+
+}

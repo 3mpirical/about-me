@@ -1,15 +1,13 @@
 
 header {
-    position: absolute;
-    top: 0;
-    left: 0;
+    position: relative;
     width: calc(100% - 6rem);
     font-weight: 400;
-    background-color: darken($color-background, 10%);
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, calc(100% - 6rem) 100%, 0% 100%);
-    clip-path: polygon(0% 0%, 100% 0%, calc(100% - 6rem) 100%, 0% 100%);
-    overflow: hidden;
+    background-color: darken($color-background, 8%);
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, calc(100% - 6rem) 100%, 6rem 6rem, 0 0);
+    clip-path: polygon(0% 0%, 100% 0%, calc(100% - 6rem) 100%, 6rem 6rem, 0 0);
     border-bottom: 0.5px solid rgba($color-cyan, 0.5);
+    z-index: 10;
 
 
     &::before {
@@ -17,7 +15,7 @@ header {
             url("../img/motherboard.svg");
         background-position-y: 50%;
         background-repeat: none;
-        opacity: 0.04;
+        opacity: 0.08;
         display: block;
         position: absolute;
         width: 100%;
@@ -34,14 +32,13 @@ header {
         font-family: "Space Mono";
         font-weight: 200;
         letter-spacing: 2px;
-        color: $color-electric-green;
-        opacity: 1;
+        color: $color-cyan;
         transition: 0.4s;
         z-index: 10;
         cursor: pointer;
 
         &:hover {
-            color: $color-cyan;
+            color: $monokai-yellow;
             transform: scale(0.8, 0.8) translate(-60%, -60%);
 
             + div {
@@ -56,15 +53,8 @@ header {
         font-size: 4.5rem;
         right: -6.6rem;
         top: 2.5rem;
-        color: $color-electric-green;
+        color: $monokai-orange;
         transition: 0.3s;
     
     }
-}
-
-.header__clearfix {
-    display: block;
-    content: "";
-    width: 100%;
-    height: 28rem;
 }

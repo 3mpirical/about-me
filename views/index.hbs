@@ -1,6 +1,25 @@
 
 {{> _header}}
     <main class="index">
-        This is the index.hbs file
+        <div class="self">
+            <div class="self__photo-container">
+                {{!-- !!!!! MAKE SURE TO REDUCE THE IMAGE QUALITY OF THIS FOR FAST PAGE LOADS !!!!! --}}
+                <img src="../img/self.jpg" alt="picture of nick" class="self__photo">
+            </div>
+            <h1 class="heading heading--about-me">
+                <span class="heading__tag">{</span>ABOUT ME<span class="heading__tag">}</span></h1>
+                <div class="question">
+                    <p class="question__response">I've lived in Browns Mills, NJ my whole life, but I moved to Utah for the universities about two years ago. Before studying at Devpoint Labs, I worked as a Pharmacy Technician in the operating room at Primary Children's Hospital.</p>
+                    <h3 class="subheading question--utah-move">~ Why did you move?</h3>
+                </div>
+        </div>
+
+        <div class="map-container">
+            <img src="./img/map.svg" alt="map of salt lake city">
+            <div class="map__i-live-here"><p>I Live Here</p></div>
+            <p class="map__contributors">© <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors</p>
+        </div>
+        
+
     </main>
 {{> _footer}}
