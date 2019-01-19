@@ -9,8 +9,7 @@
     position: absolute;
     top: -6rem;
     right: 0;
-    min-height: 100vh;
-    height: 100rem;
+    height: 90rem;
     width: 65vw;
     // overflow: hidden;
     // -webkit-clip-path: polygon(100% 6rem, 100% calc(100% - 3rem), 0 100%, 0 0);
@@ -18,16 +17,15 @@
 
     img {
         position: absolute;
-        right: -55rem;
-        // min-height: 100vh;
-        // height: 100rem;
+        right: -20rem;
+        height: 90rem;
         background-position: right;
     }
 
     .map__i-live-here {
         position: absolute;
-        top: 40rem;
-        right: 8rem;
+        top: 33rem;
+        right: 11rem;
         width: 10rem;
         height: 10rem;
         border: 8px solid $color-cyan;
