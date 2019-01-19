@@ -22,22 +22,6 @@
         background-position: right;
     }
 
-    .map__contributors {
-        position: absolute;
-        width: 18rem;
-        height: 1.5rem;
-        bottom: 3.5rem;
-        right: 12rem;
-        background-color: $color-background;
-        border-radius: 20px;
-        text-align: center;
-
-        a:link,
-        a:visited {
-            color: $color-cyan;
-        }
-    }
-
     .map__i-live-here {
         position: absolute;
         top: 40rem;
@@ -77,10 +61,27 @@
     }
 }
 
+.map__contributors {
+    position: absolute;
+    width: 18rem;
+    height: 1.5rem;
+    bottom: 0.25vh;
+    right: 12rem;
+    background-color: $color-background;
+    border-radius: 20px;
+    text-align: center;
+
+    a:link,
+    a:visited {
+        color: $color-cyan;
+    }
+}
+
+
 .code {
     position: absolute;
-    left: 2vh;
-    bottom: 2vh;
+    left: 4vh;
+    bottom: 4vh;
     font-size: 1.65vh;
     letter-spacing: -1px;
     line-height: 2.2vh;

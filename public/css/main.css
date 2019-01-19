@@ -216,14 +216,14 @@ nav {
   .self .heading--about-me {
     position: absolute;
     top: 2.5vh;
-    left: 29vh;
+    left: 30vh;
     font-size: 2.3vh; }
   .self .heading__tag {
     font-size: 3.5vh; }
   .self .question {
     position: absolute;
     top: 9vh;
-    left: 29vh;
+    left: 30vh;
     width: 38vh;
     height: 18vh;
     border-top: 1px solid rgba(0, 255, 255, 0.5);
@@ -260,18 +260,6 @@ nav {
     right: -55rem;
     height: 100rem;
     background-position: right; }
-  .map-container .map__contributors {
-    position: absolute;
-    width: 18rem;
-    height: 1.5rem;
-    bottom: 3.5rem;
-    right: 12rem;
-    background-color: #263238;
-    border-radius: 20px;
-    text-align: center; }
-    .map-container .map__contributors a:link,
-    .map-container .map__contributors a:visited {
-      color: #00ffff; }
   .map-container .map__i-live-here {
     position: absolute;
     top: 40rem;
@@ -308,10 +296,23 @@ nav {
       transform: scale(0.7, 0.7);
       border-color: #FD971F; }
 
+.map__contributors {
+  position: absolute;
+  width: 18rem;
+  height: 1.5rem;
+  bottom: 0.25vh;
+  right: 12rem;
+  background-color: #263238;
+  border-radius: 20px;
+  text-align: center; }
+  .map__contributors a:link,
+  .map__contributors a:visited {
+    color: #00ffff; }
+
 .code {
   position: absolute;
-  left: 2vh;
-  bottom: 2vh;
+  left: 4vh;
+  bottom: 4vh;
   font-size: 1.65vh;
   letter-spacing: -1px;
   line-height: 2.2vh; }
