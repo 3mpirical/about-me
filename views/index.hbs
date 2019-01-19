@@ -3,7 +3,6 @@
     <main class="index">
         <div class="self">
             <div class="self__photo-container">
-                {{!-- !!!!! MAKE SURE TO REDUCE THE IMAGE QUALITY OF THIS FOR FAST PAGE LOADS !!!!! --}}
                 <img src="../img/self-2.jpg" alt="picture of nick" class="self__photo">
             </div>
             <h1 class="heading heading--about-me">
@@ -16,10 +15,61 @@
 
         <div class="map-container">
             <img src="./img/map.svg" alt="map of salt lake city">
-            <div class="map__i-live-here"><p>I Live Here</p></div>
+            <div class="map__i-live-here"></div>
             <p class="map__contributors">© <a href="https://www.openstreetmap.org/copyright" target="_blank">OpenStreetMap</a> contributors</p>
         </div>
-        
 
+
+        <div class="code">
+
+            {{!-- <hr class="code__guide--one">
+            <hr class="code__guide--two"> --}}
+
+            <h2 class="code__details"><span class="u-high">// Details About Me</span></h2>
+
+            {{!-- aboutMe Object --}}
+            <p><br><span class="cyan u-high">const</span> <span class="white u-high" >aboutMe</span> <span class="red u-high">=</span> <span class="white u-high">{</span></p>
+
+            <p>&nbsp&nbsp&nbsp&nbsp<span class="white u-high">name:</span> <span class="yellow u-high">"nicholas ristgno"</span><span class="white u-high">,</span></p>
+
+            <p>&nbsp&nbsp&nbsp&nbsp<span class="white u-high">age:</span> <span class="purple u-high">25</span><span class="white u-high">,</span></p>
+
+            <p>&nbsp&nbsp&nbsp&nbsp<span class="white u-high">likes:</span> <span class="white u-high">[</span></p>
+
+            <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="yellow u-high">"programming"</span><span class="white u-high">,</span></p>
+
+            <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="yellow u-high">"books"</span><span class="white u-high">,</span></p>        
+
+            <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="yellow u-high">"hiking"</span><span class="white u-high">,</span></p>
+
+            <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="yellow u-high">"politics"</span><span class="white u-high">,</span></p>
+
+            <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<span class="yellow u-high">"warm weather"</span></p>
+
+            <p>&nbsp&nbsp&nbsp&nbsp<span class="white u-high">]</span><span class="white u-high">,</span></p>
+
+            <p>&nbsp&nbsp&nbsp&nbsp<span class="white u-high">previousHome:</span> <span class="yellow u-high">"Browns Mills, NJ"</span><span class="white-u-high">,</span></p>
+
+            <p>&nbsp&nbsp&nbsp&nbsp<span class="white u-high">currentLocation:</span> <span class="yellow u-high">"Salt Lake City, UT"</span><span class="white u-high">,</span></p>
+
+            <p>&nbsp&nbsp&nbsp&nbsp<span class="white u-high">previousJob:</span> <span class="yellow u-high">"Operating Room Pharmacy Tech"</span><span class="white u-high">,</span></p>
+
+            <p>&nbsp&nbsp&nbsp&nbsp<span class="white u-high">isLookingForNewjob:</span> <span class="purple u-high">true</span></p>
+
+            <p><span class="white u-high">}</span><span class="white u-high">;</span></p>
+
+            {{!-- New Developer Call --}}
+            
+            <p><br><span class="cyan u-high">const</span> <span class="white u-high">nickRistagno</span> <span class="red u-high">=</span> <span class="red u-high">new</span> <span class="white u-high">Developer(aboutMe)</span><span class="white u-high">;</span></p>
+
+            {{!-- Firm.hire() Section --}}
+
+            <p><br><span class="white u-high">Firm.</span><span class="green u-high">hire</span><span class="white u-high">(nickRistagno)</span></p>
+
+            <p><span class="white u-high">.</span><span class="cyan u-high">then</span><span class="white u-high">((</span><span class="orange u-high">satisfaction</span><span class="white u-high">)</span> <span class="cyan u-high">=></span> <span class="cyan u-high">console</span><span class="white u-high">.</span><span class="cyan u-high">log</span><span class="white u-high">(</span><span class="yellow u-high">`Success: ${satisfaction}`</span><span class="white u-high">))</span></p>
+
+            <p><span class="white u-high">.</span><span class="cyan u-high">catch</span><span class="white u-high">((</span><span class="orange u-high">err</span><span class="white u-high">)</span> <span class="cyan u-high">=></span> <span class="cyan u-high">console</span><span class="white u-high">.</span><span class="cyan u-high">log</span><span class="white u-high">(</span><span class="yellow u-high">`Something Went Wrong: ${err}`</span><span class="white u-high">));</span></p>
+        </div>
+        
     </main>
 {{> _footer}}

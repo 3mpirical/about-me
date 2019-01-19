@@ -24,3 +24,17 @@ REQUIREMENTS
 MAIN_FEATURES_________________________________________
 CCONSIDERED_FEATURES__________________________________
 PLANNED_IMPLEMENTATION________________________________
+
+///1) Build initial layout and styling
+///// COMPLETE /////
+
+///2) create about-me JS component with <p> elements
+    ^^^first create utility styles for spans so that you can color text as you go
+    ^^^insted of positioning everything with rem, utilize <p>'s block display and insert space characters to mimic tabs.
+    ^^^consider adding rotated <hr> tags ro mimic guidelines
+    ^^^ add syntax highlighting hover effect second, make a new utility class for this with colored foreground.
+///// COMPLETE /////
+
+3) Build Contact Form as second heading on Self component
+
+4) Add in svg icons and animate their hover effects

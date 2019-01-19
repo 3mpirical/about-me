@@ -37,28 +37,6 @@ app.listen(PORT, () => {
 });
 
 
-/// Details About Myself 
-// const aboutMe = {
-//     name: "nicholas ristagno",
-//     age: 25,
-//     likes: [
-//         "programming", 
-//         "books", 
-//         "hiking", 
-//         "politics", 
-//         "warm weather"
-//     ],
-//     previousHome: "Browns Mills, NJ",
-//     currentLocation: "Salt Lake City, UT",
-//     previousJob: "Operating Room Pharmacy Tech",
-//     isLookingForNewJob: true,
-// };
-
-// const nickRistagno = new Developer(aboutMe);
-
-// Firm.hire(nickRistagno)
-// .then((satisfaction) => console.log(`Success: ${satisfaction}`))
-// .catch((err) => console.log(`Something Went Wrong: ${err}`));
 
 //Maps Portfolio API KEY
 //AIzaSyCzBCE_cIVEImQjC5DEsznG_XTgnHfmGcA

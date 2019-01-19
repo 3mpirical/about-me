@@ -9,14 +9,17 @@
     position: absolute;
     top: -6rem;
     right: 0;
-    height: calc(100% + 9rem);
-    width: 100rem;
-    overflow: hidden;
+    height: 100rem;
+    width: 65vw;
+    // overflow: hidden;
     // -webkit-clip-path: polygon(100% 6rem, 100% calc(100% - 3rem), 0 100%, 0 0);
     clip-path: polygon(15rem 0, 100% 0, 100% 100%, 35rem 100%);
 
     img {
-        height: 100%;
+        position: absolute;
+        right: -55rem;
+        height: 100rem;
+        background-position: right;
     }
 
     .map__contributors {
@@ -37,8 +40,8 @@
 
     .map__i-live-here {
         position: absolute;
-        top: 35rem;
-        right: 6rem;
+        top: 40rem;
+        right: 8rem;
         width: 10rem;
         height: 10rem;
         border: 8px solid $color-cyan;
@@ -71,5 +74,39 @@
             border-color: $monokai-orange;
         }
 
+    }
+}
+
+.code {
+    position: absolute;
+    left: 2vh;
+    bottom: 2vh;
+    font-size: 1.65vh;
+    letter-spacing: -1px;
+    line-height: 2.2vh;
+    
+
+    &__details {
+        font-size: inherit;
+        color: darken($color-light-grey, 15%);
+        font-family: "Source Code Pro";
+    }
+
+    &__guide--one {
+        position: absolute;
+        top: 21rem;
+        left: -14.5rem;
+        transform: rotate(90deg);
+        width: 29rem;
+        border: 0.5px solid darken($color-light-grey, 15%);
+    }
+
+    &__guide--two {
+        position: absolute;
+        top: 18.7rem;
+        left: -1.8rem;
+        transform: rotate(90deg);
+        width: 11.5rem;
+        border: 0.5px solid darken($color-light-grey, 15%);
     }
 }
