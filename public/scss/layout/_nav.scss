@@ -10,43 +10,86 @@ nav {
     clip-path: polygon(100% 6rem, 100% calc(100% - 3rem), 0 100%, 0 0);
     z-index: 10;
 
-    // &::after {
-    //     //clearfix
-    //     display: block;
-    //     content: "";
-    //     height: 100%;
-    //     width: 100%;
-    //     opacity: 0;
-    //     z-index: -10;
-    // }
 
     ul {
+        position: absolute;
+        top: 7%;
         list-style-type: none;
 
-        &:first-child {
-            margin-top: 12rem;
+        li {
+            width: 150px;
+            padding-left: 1rem;
+            margin-top: 5%;
+            transition: 0.25s;
+            
+            &:hover{ 
+                transform: translateX(-100px);
+            }
+        }
+
+
+        a:link,
+        a:visited {
+            display: flex;
+            justify-content: space-between;
+            text-decoration: none;
+
+            img {
+                width: 3.75rem;
+            }
+
+            p {
+                display: inline-block;
+                text-decoration: none;
+                color: $color-cyan;
+                margin: auto 0;
+                font-size: 1.5rem;
+                text-align: center;
+                
+                // letter-spacing: 1px;
+                font-family: "Space Mono";
+            }
+        }
+    }
+    
+    .social-list{
+        height: 400px;
+        position: absolute;
+        top: 82%;
+        left: -15px;
+        list-style-type: none;
+
+        li {
+            width: 150px;
+            margin-top: 5%;
+            transition: 0.25s;
+            
+            &:hover{ 
+                transform: translateX(-65px);
+            }
         }
 
         a:link,
         a:visited {
-            display: inline-block;
+            display: flex;
+            justify-content: space-around;
             text-decoration: none;
-            color: inherit;
-            width: 100%;
-            height: 4rem;
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-            font-size: 1.5rem;
-            text-align: center;
-            
-            // letter-spacing: 1px;
-            font-family: "Space Mono";
-        }
 
-        a:hover{ 
-            border-left: 3px solid $color-cyan;
-            color: $monokai-yellow;
-            transform: scale(0.9, 0.9);
+            img {
+                width: 3.75rem;
+            }
+
+            p {
+                display: inline-block;
+                text-decoration: none;
+                color: $color-cyan;
+                margin: auto 0;
+                font-size: 1.5rem;
+                text-align: center;
+                
+                // letter-spacing: 1px;
+                font-family: "Space Mono";
+            }
         }
     }
 }

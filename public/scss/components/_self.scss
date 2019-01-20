@@ -1,8 +1,10 @@
+
+
 .self {
     position: relative;
     top: 0;
     right: 0;
-    height: 30vh;
+    height: 25vh;
     width: 100%;
     z-index: 5;
 
@@ -21,9 +23,9 @@
 
     &__photo-container {
         position: absolute;
-        bottom: 3vh;
-        left: 3vh;
-        height: 24vh;
+        bottom: 2vh;
+        left: 2vh;
+        height: 21vh;
         width: 24vh;
         overflow: hidden;
         border-radius: 3px;
@@ -32,13 +34,16 @@
     &__photo {
         height: 20rem;
         width: 28rem;
+        background-position: top;
+        position: absolute;
+        top: 0;
     }
 
     .heading {
         &--about-me {
             position: absolute;
-            top: 2.5vh;
-            left: 30vh;
+            top: 1.5vh;
+            left: 28vh;
             font-size: 2.3vh;
         }
 
@@ -49,21 +54,23 @@
 
     .question {
         position: absolute;
-        top: 9vh;
-        left: 30vh;
-        width: 38vh;
-        height: 18vh;
+        top: 6vh;
+        left: 28vh;
+        width: 37vh;
+        height: 17vh;
         border-top: 1px solid rgba($color-cyan, 0.5);
         border-bottom: 1px solid rgba($color-cyan, 0.5);
         background-color: rgba(0,0,0,0.6);
-        padding-left: 1vh;
-        padding-top: 0.5vh;
+        padding-left: 0.5vh;
+        padding-right: 0.5vh;
+        padding-top: 0.25vh;
         
         &__response {
             // position: absolute;
             font-size: 1.7vh;
-            font-family: "Space Mono";
+            // font-family: "Roboto Condensed";
             line-height: 2.4vh;
+            text-align: left;
 
             &:hover + .question--utah-move {
                 background-color: rgba(255,255,255, 0.1);

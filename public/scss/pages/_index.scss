@@ -1,4 +1,39 @@
 
+@keyframes zoom-in {
+    // 0% {
+    //     transform: scale(50) translate(5rem, -15rem);
+    // }
+
+    // 50% {
+    //     transform: scale(3) translate(-6rem, -5rem);
+    // }
+
+    // 80% {
+    //     transform: scale(1.2) translate(-4rem, -2rem)
+    // }
+
+    // 100%{
+    //     transform: scale(1);
+    // }
+    0% {
+        transform: scale(7) translate(-2rem, -1rem);
+        opacity: 0;
+    }
+
+    80% {
+        transform: scale(7) translate(-2rem, -1rem);
+        opacity: 1;
+    }
+
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+
+
+
 .index {
     position: relative;
     left: 6rem;
@@ -31,6 +66,9 @@
         border: 8px solid $color-cyan;
         border-radius: 100px;
         transition: 0.25s;
+        animation: zoom-in 1s ease-out;
+        animation-fill-mode: backwards;
+        animation-delay: 2s;
 
         &::before {
             @include pos-absolute-center;
@@ -82,23 +120,23 @@
     position: absolute;
     left: 4vh;
     bottom: 4vh;
-    font-size: 1.65vh;
+    font-size: 2vh;
     letter-spacing: -1px;
-    line-height: 2.2vh;
+    line-height: 2.5vh;
+    font-family: "Space Mono";
     
 
     &__details {
         font-size: inherit;
         color: darken($color-light-grey, 15%);
-        font-family: "Source Code Pro";
     }
 
     &__guide--one {
         position: absolute;
-        top: 21rem;
-        left: -14.5rem;
+        top: 23vh;
+        left: -15.7vh;
         transform: rotate(90deg);
-        width: 29rem;
+        width: 32vh;
         border: 0.5px solid darken($color-light-grey, 15%);
     }
 

@@ -5,21 +5,10 @@
     letter-spacing: 2px;
     color: $color-cyan;
 
-    @include syntax-highlight;
-
     &__tag {
         // font-size: 2.3rem;
-        font-family: "Open Source Pro";
+        font-family: serif;
         position: relative;
         color: $monokai-orange;
     }
-}
-
-.subheading {
-    font-family: "Space Mono";
-    color: $monokai-yellow;
-    // text-decoration: underline;
-
-    @include syntax-highlight;
-
 }
