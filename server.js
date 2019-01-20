@@ -18,16 +18,25 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 hbs.registerPartials(path.join(__dirname, "views", "partials"));
 
+
+// ROUTES
 app.get("/", (req, res) => {
     res.status(200)
     .render("index");
-})
+});
+
+
+app.get("/skills", (req, res) => {
+    res.status(200)
+    .render("skills");
+});
+
 
 //error route
 app.get("*", (req, res) => {
     res.status(404)
     .render("error");
-})
+});
 
 
 
