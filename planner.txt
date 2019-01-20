@@ -17,7 +17,7 @@ REQUIREMENTS
 
 -BONUS: Build a contact form with fields for name, email, and message (this form does not have to actually work)
 
--BONUS: Use JavaScript on the site.
+/////-BONUS: Use JavaScript on the site./////
 
 
 
@@ -35,6 +35,12 @@ PLANNED_IMPLEMENTATION________________________________
     ^^^ add syntax highlighting hover effect second, make a new utility class for this with colored foreground.
 ///// COMPLETE /////
 
-3) Build Contact Form as second heading on Self component
+///3) Add in svg icons and animate their hover effects
+///// COMPLETE /////
 
-4) Add in svg icons and animate their hover effects
+?) Build Contact Form as second heading on Self component
+
+*!*) Create Terminal For Input
+    1) Build Out Event Emmitter: you can actually extend the EventTarget class in such a way that you can emmit you're own user-defined-events attached to that class.
+    ^^^ Basically, when the form submits our input, an event handler for the form will fire, we will parse the input, and send the command and any arguments as an event. The event passed will trigger the listeners we've set up.
+    ^^^ If no Event Listener was triggered, then return "command not found" default error. If a listener was triggered, but the arguments fail, trigger the "incorrect argument" default error. 
