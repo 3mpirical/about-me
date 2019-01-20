@@ -90,10 +90,59 @@
 /*!*********************************!*\
   !*** ./public/js/controller.js ***!
   \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-eval("// modifying file for test purposes \n\nconsole.log(\"connected\");\n\n//# sourceURL=webpack:///./public/js/controller.js?");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _models_model_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./models/model.js */ \"./public/js/models/model.js\");\n/* harmony import */ var _views_view_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./views/view.js */ \"./public/js/views/view.js\");\n/* harmony import */ var _state_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./state.js */ \"./public/js/state.js\");\n/* harmony import */ var _elements_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./elements.js */ \"./public/js/elements.js\");\n// modifying file for test purposes \n\n\n\n\n\n\nconst CTRL = (function(MDL, VIEW, state, elements) {\n\n       const initializePages = () => {\n        VIEW.appendAboutMeResponse();\n    };\n\n    return {\n        initializePages,\n    };\n} (_models_model_js__WEBPACK_IMPORTED_MODULE_0__[\"MDL\"], _views_view_js__WEBPACK_IMPORTED_MODULE_1__[\"VIEW\"], _state_js__WEBPACK_IMPORTED_MODULE_2__[\"state\"], _elements_js__WEBPACK_IMPORTED_MODULE_3__[\"elements\"]) );\n\n\nconsole.log(CTRL);\nCTRL.initializePages();\n\n//# sourceURL=webpack:///./public/js/controller.js?");
+
+/***/ }),
+
+/***/ "./public/js/elements.js":
+/*!*******************************!*\
+  !*** ./public/js/elements.js ***!
+  \*******************************/
+/*! exports provided: elements */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"elements\", function() { return elements; });\n\nconst elements = {\n    aboutMeResponse: document.querySelector(\".question__response\"),\n};\n\n\n\n//# sourceURL=webpack:///./public/js/elements.js?");
+
+/***/ }),
+
+/***/ "./public/js/models/model.js":
+/*!***********************************!*\
+  !*** ./public/js/models/model.js ***!
+  \***********************************/
+/*! exports provided: MDL */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"MDL\", function() { return MDL; });\n\n\nconst MDL = { \n\n};\n\n\n\n\n//# sourceURL=webpack:///./public/js/models/model.js?");
+
+/***/ }),
+
+/***/ "./public/js/state.js":
+/*!****************************!*\
+  !*** ./public/js/state.js ***!
+  \****************************/
+/*! exports provided: state */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"state\", function() { return state; });\n\nconst state = {\n\n};\n\n\n\n//# sourceURL=webpack:///./public/js/state.js?");
+
+/***/ }),
+
+/***/ "./public/js/views/view.js":
+/*!*********************************!*\
+  !*** ./public/js/views/view.js ***!
+  \*********************************/
+/*! exports provided: VIEW */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"VIEW\", function() { return VIEW; });\n/* harmony import */ var _models_model_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../models/model.js */ \"./public/js/models/model.js\");\n/* harmony import */ var _state_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../state.js */ \"./public/js/state.js\");\n/* harmony import */ var _elements_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../elements.js */ \"./public/js/elements.js\");\n\n\n\n\nconst aboutMeText = \"I lived in Browns Mills, New Jersey up until May of 2017, and moved to Salt Lake City to study. Before Devpoint Labs, I was an Operating Room Pharmacy Tech at Primary Children's Hospital and a student at Rowan College.\";\n\nconst asyncAppend = (string, parentNode, delay = 30) => {\n    return new Promise((resolve, reject) => {\n        if(parentNode !== null) {\n\n            const timeoutAppend = (stringArr) => {\n                setTimeout(() => {\n                    if(stringArr[0] !== undefined) {\n                        const node = document.createElement(\"span\");\n                        node.textContent = stringArr[0];\n                        parentNode.appendChild(node);\n                        stringArr.shift();\n                        timeoutAppend(stringArr);\n                    } \n                }, delay);\n            };\n\n            timeoutAppend([...string]);\n            resolve(\"Success\");\n        }\n            resolve(\"Parent Node Not Found\");\n    });\n};\n\nconst VIEW = {\n\n    appendAboutMeResponse: () => {\n        asyncAppend(aboutMeText, _elements_js__WEBPACK_IMPORTED_MODULE_2__[\"elements\"].aboutMeResponse, 45)\n    },\n\n};\n\n\n\n\n\n//# sourceURL=webpack:///./public/js/views/view.js?");
 
 /***/ })
 
