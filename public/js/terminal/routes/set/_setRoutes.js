@@ -44,16 +44,19 @@ const setRoutes = (terminal) => {
     
     //set email
     terminal.addListener("set --email", setEmail);
+    terminal.addListener("set -email", setEmail);
     terminal.addListener("set email", setEmail);
     terminal.addListener("set -e", setEmail);
     
     //set name
     terminal.addListener("set --name", setName);
+    terminal.addListener("set -name", setName);
     terminal.addListener("set name", setName);
     terminal.addListener("set -n", setName);
 
     //set message
     terminal.addListener("set --message", setMessage);
+    terminal.addListener("set -message", setMessage);
     terminal.addListener("set message", setMessage);
     terminal.addListener("set -m", setMessage);
 

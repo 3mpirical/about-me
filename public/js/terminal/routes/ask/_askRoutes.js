@@ -58,28 +58,48 @@ const askMove = (event) => {
 };
 
 
+//----- put all other functions in here -----
+const askEverything = (event) => {
+    askAge();
+    askGrewUp();
+    askMove();
+    askCoding();
+};
+
+
+
 ///// ROUTES /////
 const askRoutes = (terminal) => {
     //grew up
     terminal.addListener("ask --grew-up", askGrewUp);
+    terminal.addListener("ask -grew-up", askGrewUp);
     terminal.addListener("ask grew-up", askGrewUp);
     terminal.addListener("ask grewup", askGrewUp);
     terminal.addListener("ask -gu", askGrewUp);
 
     //age
     terminal.addListener("ask --age", askAge);
+    terminal.addListener("ask -age", askAge);
     terminal.addListener("ask age", askAge);
     terminal.addListener("ask -a", askAge);
 
     //coding
     terminal.addListener("ask --coding", askCoding);
+    terminal.addListener("ask -coding", askCoding);
     terminal.addListener("ask coding", askCoding);
     terminal.addListener("ask -c", askCoding);
 
     //move
     terminal.addListener("ask --move", askMove);
+    terminal.addListener("ask -move", askMove);
     terminal.addListener("ask move", askMove);
     terminal.addListener("ask -m", askMove);
+
+    //everything
+    terminal.addListener("ask everything", askEverything);
+    terminal.addListener("ask --everything", askEverything);
+    terminal.addListener("ask -everything", askEverything);
+    terminal.addListener("ask -e", askEverything);
 
 };
 

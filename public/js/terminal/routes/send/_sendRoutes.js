@@ -62,6 +62,7 @@ const sendMessage = (event) => {
 const sendRoutes = (terminal) => {
     //send message
     terminal.addListener("send --message", sendMessage);
+    terminal.addListener("send -message", sendMessage);
     terminal.addListener("send message", sendMessage);
     terminal.addListener("send -m", sendMessage);
 };

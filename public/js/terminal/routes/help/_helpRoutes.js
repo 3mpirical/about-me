@@ -52,6 +52,7 @@ const helpRoutes = function(terminal) {
 
     //help please
     terminal.addListener("help --please", helpPlease);
+    terminal.addListener("help -please", helpPlease);
 
 };
 
