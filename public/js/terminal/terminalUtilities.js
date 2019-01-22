@@ -1,4 +1,5 @@
 import { elements } from "../elements";
+import { Utils } from "handlebars";
 
 
 const UTIL = function(nodeArr) {
@@ -7,6 +8,7 @@ const UTIL = function(nodeArr) {
         element.scrollTop = element.scrollHeight;
     };
 
+    ///// CODE THAT CHAINS STARTS HERE /////
     const createAppendP = (parentNode, text, ...classes) => {
         let node = document.createElement("p");
         node.textContent = text;
@@ -15,10 +17,11 @@ const UTIL = function(nodeArr) {
 
         parentNode.appendChild(node);
         updateScroll(elements.terminalDisplay);
+
+        return UTIL();
     };
+    //^^^ note that this functions doesn't return nodes
 
-
-    ///// CODE THAT CHAINS STARTS HERE /////
     const createManyPs = ( ...text) => {
         const newArr = text.map((item, index, arr) => {
             let node = document.createElement("p");
@@ -40,24 +43,30 @@ const UTIL = function(nodeArr) {
     };
 
     const asyncAppendArr = (parentNode, delay = 30) => {
-        return new Promise((resolve, reject) => {
-            if(parentNode !== null) {
+        if(parentNode !== null) {
+            return new Promise((resolve, reject) => {
                 
                 const timeoutAppend = () => {
-                    setTimeout(() => {
-                        if(nodeArr[0] !== undefined) {
-                            parentNode.appendChild(nodeArr[0]);
-                            nodeArr.shift();
-                            updateScroll(parentNode);
-                            timeoutAppend(nodeArr[0]);
-                        }
-                    }, delay);
+                    return new Promise((resolve, reject) => {
+                        setTimeout(() => {
+                            if(nodeArr.length > 0) {
+                                parentNode.appendChild(nodeArr[0]);
+                                nodeArr.shift();
+                                updateScroll(parentNode);
+                                resolve(timeoutAppend(nodeArr[0]));
+                            }
+                                resolve("finished");
+                        }, delay);
+                    });
                 };
-                timeoutAppend(nodeArr);
-                resolve("Success");
-            }
-                resolve("Parent Node Not Found");
-        });
+
+                timeoutAppend()
+                .then((data) => {
+                    resolve(data);
+                });
+
+            });
+        }
     };
 
     return {

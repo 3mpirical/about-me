@@ -158,27 +158,27 @@ nav {
   -webkit-clip-path: polygon(100% 6rem, 100% calc(100% - 3rem), 0 100%, 0 0);
   clip-path: polygon(100% 6rem, 100% calc(100% - 3rem), 0 100%, 0 0);
   z-index: 10; }
-  nav ul {
+  nav .page-nav {
     position: absolute;
-    top: 7%;
+    top: 5vh;
     list-style-type: none; }
-    nav ul li {
-      width: 150px;
-      padding-left: 1rem;
+    nav .page-nav li {
+      width: 120px;
       margin-top: 5%;
       transition: 0.25s; }
-      nav ul li:hover {
-        transform: translateX(-100px); }
-    nav ul a:link,
-    nav ul a:visited {
+      nav .page-nav li:hover {
+        transform: translateX(-78px); }
+    nav .page-nav a:link,
+    nav .page-nav a:visited {
       display: flex;
-      justify-content: space-between;
+      justify-content: space-around;
       text-decoration: none; }
-      nav ul a:link img,
-      nav ul a:visited img {
+      nav .page-nav a:link img,
+      nav .page-nav a:visited img {
         width: 3.75rem; }
-      nav ul a:link p,
-      nav ul a:visited p {
+      nav .page-nav a:link p,
+      nav .page-nav a:visited p {
+        transform: translateX(50%);
         display: inline-block;
         text-decoration: none;
         color: #00ffff;
@@ -188,16 +188,15 @@ nav {
         font-family: "Space Mono"; }
   nav .social-list {
     height: 400px;
-    position: absolute;
-    top: 82%;
-    left: -15px;
+    position: relative;
+    top: 82vh;
     list-style-type: none; }
     nav .social-list li {
-      width: 150px;
+      width: 120px;
       margin-top: 5%;
       transition: 0.25s; }
       nav .social-list li:hover {
-        transform: translateX(-65px); }
+        transform: translateX(-78px); }
     nav .social-list a:link,
     nav .social-list a:visited {
       display: flex;
@@ -208,6 +207,7 @@ nav {
         width: 3.75rem; }
       nav .social-list a:link p,
       nav .social-list a:visited p {
+        transform: translateX(50%);
         display: inline-block;
         text-decoration: none;
         color: #00ffff;
@@ -347,10 +347,10 @@ nav {
 
 @keyframes zoom-in {
   0% {
-    transform: scale(7) translate(-2rem, -1rem);
+    transform: scale(0);
     opacity: 0; }
   80% {
-    transform: scale(7) translate(-2rem, -1rem);
+    transform: scale(0.2);
     opacity: 1; }
   100% {
     transform: scale(1); } }

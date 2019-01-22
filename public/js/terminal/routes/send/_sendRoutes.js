@@ -11,6 +11,7 @@ const sendMessage = (event) => {
 
             UTIL()
             .createManyPs(
+                ' ',
                 `Name: ${state.userName? state.userName: "none"}`,
                 `Email: ${state.userEmail? state.userEmail: "none"}`,
                 `Message: ${state.userMessage? state.userMessage: "none"}`,
@@ -23,6 +24,7 @@ const sendMessage = (event) => {
         } else {
             UTIL()
             .createManyPs(
+                ' ',
                 `Name: ${state.userName? state.userName: "none"}`,
                 `Email: ${state.userEmail? state.userEmail: "none"}`,
                 `Message: ${state.userMessage? state.userMessage: "none"}`,
@@ -58,7 +60,6 @@ const sendMessage = (event) => {
 };
 
 ///// ROUTES /////
-
 const sendRoutes = (terminal) => {
     //send message
     terminal.addListener("send --message", sendMessage);

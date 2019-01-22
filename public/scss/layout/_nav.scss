@@ -10,62 +10,18 @@ nav {
     clip-path: polygon(100% 6rem, 100% calc(100% - 3rem), 0 100%, 0 0);
     z-index: 10;
 
-
-    ul {
+    .page-nav {
         position: absolute;
-        top: 7%;
+        top: 5vh;
         list-style-type: none;
 
         li {
-            width: 150px;
-            padding-left: 1rem;
+            width: 120px;
             margin-top: 5%;
             transition: 0.25s;
             
             &:hover{ 
-                transform: translateX(-100px);
-            }
-        }
-
-
-        a:link,
-        a:visited {
-            display: flex;
-            justify-content: space-between;
-            text-decoration: none;
-
-            img {
-                width: 3.75rem;
-            }
-
-            p {
-                display: inline-block;
-                text-decoration: none;
-                color: $color-cyan;
-                margin: auto 0;
-                font-size: 1.5rem;
-                text-align: center;
-                
-                // letter-spacing: 1px;
-                font-family: "Space Mono";
-            }
-        }
-    }
-    
-    .social-list{
-        height: 400px;
-        position: absolute;
-        top: 82%;
-        left: -15px;
-        list-style-type: none;
-
-        li {
-            width: 150px;
-            margin-top: 5%;
-            transition: 0.25s;
-            
-            &:hover{ 
-                transform: translateX(-65px);
+                transform: translateX(-78px);
             }
         }
 
@@ -80,16 +36,55 @@ nav {
             }
 
             p {
+                transform: translateX(+50%);
                 display: inline-block;
                 text-decoration: none;
                 color: $color-cyan;
                 margin: auto 0;
                 font-size: 1.5rem;
                 text-align: center;
-                
-                // letter-spacing: 1px;
                 font-family: "Space Mono";
             }
         }
     }
+    
+    .social-list{
+        height: 400px;
+        position: relative;
+        top: 82vh;
+        list-style-type: none;
+        
+        li {
+            width: 120px;
+            margin-top: 5%;
+            transition: 0.25s;
+            
+            &:hover{ 
+                transform: translateX(-78px);
+            }
+        }
+
+        a:link,
+        a:visited {
+            display: flex;
+            justify-content: space-around;
+            text-decoration: none;
+
+            img {
+                width: 3.75rem;
+            }
+
+            p {
+                transform: translateX(+50%);
+                display: inline-block;
+                text-decoration: none;
+                color: $color-cyan;
+                margin: auto 0;
+                font-size: 1.5rem;
+                text-align: center;
+                font-family: "Space Mono";
+            }
+        }
+    }
+    
 }
