@@ -1,0 +1,84 @@
+#terminal-toggle {
+    position: absolute;
+    bottom: 40rem;
+    left: 40rem;
+    height: 100rem;
+    width: 100rem;
+    z-index: 100;
+    visibility: hidden;
+
+    &:checked{
+        + div {
+            transform: translateY(0);
+        }
+    }
+}
+
+
+.terminal {
+    position: absolute;
+    bottom: -3rem;
+    right: 0;
+    width: calc(100vw - 6rem);
+    height: calc(45% + 3rem);
+    background-color: rgba(0,0,0,0.9);
+    border-top: 5px solid rgba($color-cyan, 0.8);
+    font-size: 1.3rem;
+    color: $color-cyan;
+    cursor: text;
+    transform: translateY(50vh);
+    transition: 3sec;
+
+    &__input-container {
+        position: absolute;
+        bottom: 6rem;
+        left: 0;
+        width: 100%;
+        height: calc(17% - 3rem);
+        border-top: 1px solid rgba($color-cyan, 0.8);
+
+        .terminal__directory {
+            position: absolute;
+            transform: translateY(-50%);
+            top: 50%;
+            width: 20%;
+            color: inherit;
+            font-size: inherit;
+            padding-left: 15px;
+        }
+
+        .terminal__input {
+            position: absolute;
+            transform: translateY(-50%);
+            top: 50%;
+            left: 120px;
+            height: 100%;
+            width: 80vw;
+            color: inherit;
+            background-color: rgba(0,0,0,0);
+            border: none;
+            outline: none;
+            padding-left: 5px;
+            font-size: inherit;
+        }
+    }
+
+    &__display {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: calc(83% - 3rem);
+        background-color: rgba(0,0,0,0);
+        overflow: scroll;
+        padding: 0 0 5px 20px;
+        font-size: 1.1rem;
+        color: inherit;
+        white-space: pre-wrap;
+
+    }
+}
+
+.terminal-toggle-up {
+    transform: translateY(0);
+}
