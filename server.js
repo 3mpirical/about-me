@@ -26,7 +26,7 @@ app.get("/", (req, res) => {
 });
 
 
-app.get("/skills", (req, res) => {
+app.get("/work", (req, res) => {
     res.status(200)
     .render("skills");
 });

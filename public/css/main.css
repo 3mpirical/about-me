@@ -138,7 +138,7 @@ footer {
       background-color: rgba(255, 255, 255, 0.1); }
   footer .get-in-touch {
     position: absolute;
-    left: 6rem;
+    left: 7rem;
     bottom: 25%;
     font-size: 1.2rem;
     color: #00ffff;
@@ -146,6 +146,11 @@ footer {
     text-decoration: underline; }
     footer .get-in-touch:hover {
       background-color: rgba(255, 255, 255, 0.1); }
+    footer .get-in-touch__icon {
+      position: relative;
+      margin-right: 1rem;
+      top: 0.8rem;
+      height: 3rem; }
 
 nav {
   position: absolute;
@@ -160,7 +165,7 @@ nav {
   z-index: 10; }
   nav .page-nav {
     position: absolute;
-    top: 5vh;
+    top: 7vh;
     list-style-type: none; }
     nav .page-nav li {
       width: 120px;
@@ -315,7 +320,8 @@ nav {
       width: 20%;
       color: inherit;
       font-size: inherit;
-      padding-left: 15px; }
+      padding-left: 15px;
+      cursor: text; }
     .terminal__input-container .terminal__input {
       position: absolute;
       transform: translateY(-50%);
@@ -449,3 +455,16 @@ nav {
     transform: rotate(90deg);
     width: 11.5rem;
     border: 0.5px solid #546973; }
+
+.contact {
+  position: relative;
+  left: 6rem;
+  width: calc(100% - 6rem);
+  background: linear-gradient(to right, #0d1114 40%, rgba(0, 0, 0, 0)); }
+  .contact .sky-background {
+    position: absolute;
+    top: -6rem;
+    z-index: -10;
+    height: calc(100vh + 6rem);
+    width: 100%;
+    opacity: 0.14; }

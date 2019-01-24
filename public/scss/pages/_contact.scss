@@ -1,0 +1,16 @@
+.contact {
+    position: relative;
+    left: 6rem;
+    width: calc(100% - 6rem);
+    background: linear-gradient(to right, darken($color-background, 12%) 40%, rgba(0,0,0,0));
+
+    .sky-background {
+        position: absolute;
+        top: -6rem;
+        z-index: -10;
+        height: calc(100vh + 6rem);
+        width: 100%;
+        opacity: 0.14;
+
+    }
+}

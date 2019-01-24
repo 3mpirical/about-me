@@ -10,7 +10,7 @@ import { initTerminalRoutes } from "./terminal/terminalRoutes";
 const CTRL = (function(MDL, VIEW, state, elements) {
 
     const initializePages = () => {
-        VIEW.appendAboutMeResponse();
+        // VIEW.appendAboutMeResponse();
     };
 
     const handleTerminalSubmit = () => {

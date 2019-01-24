@@ -32,7 +32,7 @@ footer{
 
     .get-in-touch {
         position: absolute;
-        left: 6rem;
+        left: 7rem;
         bottom: 25%;
         font-size: 1.2rem;
         color: $color-cyan;
@@ -40,5 +40,13 @@ footer{
         text-decoration: underline;
 
         @include syntax-highlight;
+
+        &__icon {
+            position: relative;
+            margin-right: 1rem;
+            top: 0.8rem;
+            height: 3rem;
+
+        }
     }
 }
